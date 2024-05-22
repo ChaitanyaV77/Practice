@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>HTML layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        {
+            box-sizing:border-box;
+        }
+        body{
+            font-family:"Playfair Display", serif;
+        }
+        header{
+            background-color: lightcoral;
+            padding: 35px;
+            text-align: center;
+            font-size: 30px;
+        }
+        nav{
+            float: left;
+            width:30%;
+            height:400px;
+            background-color: lightblue;
+            padding: 20px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        article{
+            float:centre;
+            padding:20px;
+            width:70%;
+            background-color: lightskyblue;
+            height: 400px;
+        }
+        section::after{
+            content: "";
+            display:table;
+            clear:both;
+        }
+        footer{
+            background-color: lightcyan;
+            padding: 10px;
+            text-align:center ;
+        }
+        @media(max-width:600px){
+            nav,article{
+                width:100%;
+                height:auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML</h1>
+    <h2>Introduction</h2>
+    <p>HyperText Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+    <header>
+        <h2>HTML Page</h2>
+    </header>
+    <Section>
+        <nav> 
+            <ul>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#"> About</a></li>
+                <li><a href="#"> History</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1> HTML Basic</h1>
+            <p>The original purpose of the doctype was to enable the parsing and validation of HTML documents by SGML tools based on the Document Type Definition (DTD). The DTD to which the DOCTYPE refers contains a machine-readable grammar specifying the permitted and prohibited content for a document conforming to such a DTD. Browsers, on the other hand, do not implement HTML as an application of SGML and as consequence do not read the DTD.</p>
+        </article>
+    </Section>
+    <footer>
+        <p>HTML Page</p>
+    </footer>
+</body>
+</html>
