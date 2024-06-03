@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        #one{
+            position: relative;
+        }
+
+        #two{
+            border: 2px solid;
+            position: relative;
+            z-index: 1;
+            height: 100px;
+            width: 400px;
+        }
+
+        #three{
+            position:absolute;
+            z-index: 3;
+            background-color:brown;
+            width: 200px;
+            height: 50px;
+            left: 50px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Z-Index</h1>
+    <div id="one">
+    <div id="two">Applies styles to the first line of a block-level element. Note that the length of the first line depends on many factors, including the width of the element, the width of the document, and the font size of the text.</div>
+    <div id="three">absolute position</div>
+    </div>
+</body>
+</html>
