@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form using html and css</title>
+    <style>
+        body{
+            background-color: lavenderblush;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            
+        }
+        form{
+            background-color:lightcyan;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px lightblue;
+        }
+        .form-control{
+            text-align: left;
+            margin-bottom:25px;
+        }
+        .form-control label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid grey;
+            border-radius: 2px;
+            font-family:'Times New Roman', Times, serif;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+        button {
+            background-color: green;
+            border: 1px solid lightsalmon;
+            border-radius: 2px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+    <form id="form">
+        <div class="form control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+            <input type="text" id="name" placeholder="Enter your Name">
+        </div>
+        <br>
+        <div class="form control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+            <input type="email" id="email" placeholder="Enter your Email">
+        </div>
+        <br>
+        <div class="form control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+            <input type="text" id="age" placeholder="Enter your Age">
+        </div>
+        <br>
+        <div class="form control">
+            <label for="role" id="label-role">
+                Which Option best describes you?
+            </label>
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="Professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <br>
+        <div class="form control">
+            <label>
+                Would you recommend this job to a friend?
+            </label>
+            <label for="recom-1">
+                <input type="radio" id="recom-1" name="recom">Yes
+            </label>
+            <label for="recom-2">
+                <input type="radio" id="recom-2" name="recom"> No
+            </label>
+            <label for="recom-3">
+                <input type="radio" id="recom-3" name="recom"> Maybe
+            </label>
+        </div>
+        <br>
+        <div class="form control">
+            <label>
+                Languages Known
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">C
+            </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">C++
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Java
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Python
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Sql
+            </label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">html
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Css
+            </label>
+            <label for="inp-8">
+                <input type="checkbox" name="inp">javascript
+            </label>
+            <label for="inp-9">
+                <input type="checkbox" name="inp">React JS
+            </label>
+            <label for="inp-10">
+                <input type="checkbox" name="inp">Django
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="Comment">
+                Any Comments or Suggestions
+            </label>
+            <textarea name="comment" id="comment" 
+            placeholder="Enter your comment here">
+            </textarea>
+        </div>
+        <button type="submit" value="submit">Submit</button>
+    </form>
+</body>
+</html>
