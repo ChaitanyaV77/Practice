@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Coffee House</title>
+    <style>
+        body{
+            background-color:white;
+            display:flex;
+            justify-content:space-around;
+            background-image: url("https://m.media-amazon.com/images/I/61A0WcSd8AL._AC_UF1000,1000_QL80_.jpg");
+        }
+        h1{
+            margin:1px;
+            padding: 1px 2px 1px 100px;
+            color:lemonchiffon;
+            font-style: italic;
+            font-size:40px;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .Home{
+            background-color: white;
+            color:blue;
+            padding:5px;
+            font-size: 16px;
+            border:3px solid white;
+            cursor: pointer;
+        }
+        .types{
+            position: absolute;
+            background-color:white;
+            min-width: 20px;
+            z-index: 1;
+            display: none;
+        }
+        .types a{
+        color:blueviolet;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: block;
+         }
+        .types a:hover{
+            background-color: white;
+        }
+        .dropdown:hover .types{
+         display: block;
+        }
+         #dropdown{
+        position: relative;
+        display: inline-block;
+        }
+        .Hot {
+        background-color: white;
+        color:blue;
+        padding:5px;
+        font-size: 16px;
+        border: 3px solid white;
+        cursor: pointer;
+        }
+        .type{
+          position: absolute;
+          background-color: darkgrey;
+          min-width: 20px;
+          z-index: 1;
+          display: none;
+        }
+        .type a{
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: block;
+        }
+        .type a:hover{
+         background-color: white;
+        }
+        .dropdown:hover .type{
+         display: block;
+        }
+        .dropdown{
+        display: inline-block;
+        position: relative;
+        }
+        .Cold {
+        background-color: white; 
+        color: blue;
+        padding:5px;
+        font-size: 15px;
+        border: 3px solid white;
+        cursor: pointer;
+        }
+        .geners{
+          position: absolute;
+          background-color:white;
+          min-width: 20px;
+          z-index: 1;
+          display: none;
+        }
+        .geners a{
+        color: blueviolet;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: block;
+        }
+        .geners a:hover{
+         background-color: white;
+         }
+        .drpdwn:hover .geners{
+         display: block;
+        }
+        .drpdown{
+        position: relative;
+        display: inline-block;
+        }
+        .Momos{
+        background-color: white;
+        color: blue;
+        padding:5px;
+        font-size: 15px;
+        border: 3px solid white;
+        cursor: pointer;
+         }
+        .num{
+        position: absolute;
+        background-color: white;
+        min-width: 20px;
+        z-index: 1;
+        display: none;
+        }
+        .num a{
+        color: blueviolet;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: block;
+        }
+        .num a:hover{
+        background-color: white;
+        }
+        .drpdown:hover .num{
+        display: block;
+        }
+        .dpdown{
+        display:block;
+        position:relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coffee House</h1>
+    <div class="dropdown">
+        <button class="Home">Home</button>
+        <div class="types">
+            <a href="#">Hot Beverages</a>
+            <a href="#">Cold Beverages</a>
+            <a href="#">Momos</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="Hot Beverages">Hot Beverages</button>
+        <div class="types">
+            <a href="#">Capppuccino</a>
+            <a href="#">Hot Chocolate</a>
+            <a href="#">Expresso</a>
+            <a href="#">Americano</a>
+        </div>
+    </div>
+    <div class="drpdwn">
+        <button class="Cold Beverages">Cold Beverages</button>
+        <div class="geners">
+            <a href="#">Classic Cold Coffee</a>
+            <a href="#">Ice Cold Coffee</a>
+            <a href="#">Spl Frappe</a>
+            <a href="#">Mocha Frappe</a>
+        </div>
+    </div>  
+    <div class="drpdown">
+        <button class="Momos">Momos</button>
+        <div class="num">
+            <a href="#">Spicy Momos</a>
+            <a href="#">fried momos</a>
+            <a href="#">steam momos</a>
+            <a href="#">chicken momos</a>
+            <a href="#">veg momos</a>
+        </div>
+    </div>
+</body>
+</html>
